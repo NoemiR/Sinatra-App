@@ -12,9 +12,9 @@ ActiveRecord::Base.establish_connection(
 # get '/' do 
 # 	"My first fullstack app "
 # end
-get '/' do
-	@page_title = "index template"
-	erb :index
-end
+ 	get '/' do
+		@page = "hello"
+  		erb :hello
+  	end
 end
 
