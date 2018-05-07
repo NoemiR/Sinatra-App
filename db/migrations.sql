@@ -13,3 +13,21 @@ CREATE TABLE items(
   title VARCHAR(255),
   user_id INT REFERENCES users(id)
 );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

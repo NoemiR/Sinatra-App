@@ -1,0 +1,13 @@
+<h2 style="border: 1px solid purple; border-radius: 5px">Item index</h2>
+<ul>
+	<% @items.each do |item| %>
+
+		<li>
+			<%= item.title %>
+				<form action="/items/<%= item.id %>" method="POST">
+					<input type="hidden" name="_method" value="DELETE">
+					<input type="submit" value="Delete">
+				</form>
+			</li>
+	<% end %>
+</ul> 

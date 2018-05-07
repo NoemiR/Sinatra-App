@@ -1,11 +1,17 @@
 require 'sinatra/base'
-
-require './controllers/ApplicationController'
 require 'sinatra/activerecord'
+
 require './controllers/ItemController'
-map('/'){
-	run ApplicationController
-}
+require './controllers/ApplicationController'
+
+require './models/ItemModel'
+
+
+
 map('/items'){
 	run ItemController
+}
+
+map('/'){
+	run ApplicationController
 }

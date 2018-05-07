@@ -4,7 +4,14 @@
 	<title><%= @page %></title>
 </head>
 <body>
-	<h1 style="border: 1px solid blue; border-radius: 10px justify-content: center;">Coding is awesome!!!!</h1>
+
+ <nav>
+      <a href="/items">Item list</a> •
+      <a href="/items/add">Add Items</a>
+   
+  </nav>
+  
+  <h1 id="app-name">Awesome Site!</h1>
 	<%= yield %>
 </body>
 </html>

@@ -16,5 +16,6 @@ ActiveRecord::Base.establish_connection(
 		@page = "hello"
   		erb :hello
   	end
+  	
 end
 
